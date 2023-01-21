@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    this is fontawesome-->
+    <script src="https://kit.fontawesome.com/7a6400bfaa.js" crossorigin="anonymous"></script>
+    <!--    this is google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!--    this is bootstrap min css-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!--    this is style css-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!--this is website title-->
+    <title>Top News Portal</title>
+</head>
+
+<body>
+    <!--Header Start-->
+    <header style="overflow-x: hidden">
+        <nav class="navbar navbar-expand-lg p-2">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-uppercase" href="#">Top News Portal</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
+                        <li class="nav-item">
+                            <a id="news-nav" class="nav-link" href="index.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <hr class="container-fluid m-1 bg-primary mb-5">
+
+        <!--Category menu start-->
+        <ul id="category-menu" class="d-flex flex-lg-row flex-column justify-content-center align-items-center"></ul>
+        <!--Category menu end-->
+    </header>
+    <!--Header End-->
+    <!--main start-->
+    <main class="container">
+
+        <!--item list section start-->
+        <section class="row">
+            <div class="col-12 d-flex justify-content-center border border-primary">
+                <h2 class="p-2 m-0 text-capitalize">
+                    <span id="item-category-list"></span>
+                </h2>
+            </div>
+        </section>
+        <!--item list section end-->
+
+        <!--sort by view section start-->
+        <section>
+            <div class="d-flex justify-content-between align-items-center mt-5">
+                <div>
+                    <h5>Sort By View: <button class="btn btn-light px-3 py-2" disabled>Default</button></h5>
+                </div>
+                <div>
+                    <button class="btn btn-primary p-2 me-2">Today's Pick</button>
+                    <button class="btn btn-primary p-2">Trending</button>
+                </div>
+            </div>
+        </section>
+        <!--sort by view section end-->
+
+
+        <!--card area section start-->
+        <section id="card-area" class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 mt-5"></section>
+        <!--card area section end-->
+
+        <!--loader section start-->
+        <section id="loader" class="d-none">
+            <div style="height: 400px" class="d-flex justify-content-center align-items-center">
+                <div class="spinner-border text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </section>
+        <!-- loader section end-->
+
+        <!--Modal section start-->
+        <section>
+            <div class="modal fade" id="New-Detail" tabindex="-1" aria-labelledby="New" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="New">New Detail</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div id="news-detail" class="modal-body">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Modal section end-->
+    </main>
+    <!--main end-->
+
+    <!--    footer start-->
+    <footer class="bg-dark text-white mt-3 px-5 py-5">
+        <p class="m-0 text-center">Copyright 2022 TOP NEWS PORTAL</p>
+    </footer>
+    <!--    footer end-->
+
+    <!--bootstrap min js    -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--app js    -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
